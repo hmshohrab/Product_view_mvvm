@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="DialogAnimation" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowTitleStyle">@style/DialogTitleTextStyle</item>
+    </style>
+
+    <style name="AppAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowEnterAnimation">@anim/slide_bottom_top</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/black_87_percent</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/white</item>
+        <item name="android:windowTitleStyle">@style/DialogTitleTextStyle</item>
+    </style>
+
+    <style name="DialogTitleTextStyle">
+        <item name="android:textColor">@color/black_87_percent</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+    </style>
+</resources>
