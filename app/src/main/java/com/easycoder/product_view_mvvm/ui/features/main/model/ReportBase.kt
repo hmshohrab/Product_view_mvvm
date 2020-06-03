@@ -11,9 +11,9 @@ import com.google.gson.annotations.SerializedName
  * Let's start coding :)
  * Bismillah Hir Rahman Nir Raheem
  */
-data class ReportBase (
+data class ReportBase(
 
-    @SerializedName("error") val error : Int,
-    @SerializedName("error_report") val error_report : String,
-    @SerializedName("report") val report : MutableList<Report>
+    @SerializedName("error") val error: Int,
+    @SerializedName("error_report") val error_report: String,
+    @SerializedName("report") val report: MutableList<Report>
 )

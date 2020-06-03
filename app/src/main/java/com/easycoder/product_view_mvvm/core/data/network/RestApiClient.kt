@@ -35,11 +35,12 @@ object RestApiClient {
         }
         return retrofit!!
     }
+
     private val gson = GsonBuilder()
         .setLenient()
         .create()
 
-     fun create(context: Context): Retrofit {
+    fun create(context: Context): Retrofit {
         // Level.BODY
         /*shows all the information of a request. We just want to see info when app
         * is in debug mode*/
@@ -60,7 +61,6 @@ object RestApiClient {
             .client(okHttpClient!!)
             .build()
     }
-
 
 
 }

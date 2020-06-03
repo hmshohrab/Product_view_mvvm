@@ -12,10 +12,10 @@ import java.io.Serializable
  * Let's start coding :)
  * Bismillah Hir Rahman Nir Raheem
  */
-data class Report (
+data class Report(
 
-    @SerializedName("Id") val id : Int,
-    @SerializedName("Title") val title : String,
-    @SerializedName("Price") val price : Int,
-    @SerializedName("Image") val image : String
+    @SerializedName("Id") val id: Int,
+    @SerializedName("Title") val title: String,
+    @SerializedName("Price") val price: Int,
+    @SerializedName("Image") val image: String
 ) : Serializable

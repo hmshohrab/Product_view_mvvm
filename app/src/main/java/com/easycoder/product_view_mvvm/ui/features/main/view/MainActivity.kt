@@ -18,9 +18,9 @@ import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-    var reportBase : ReportBase? = null
-    var reportList : MutableList<Report>? = null
-    var reportAdapter : ReportAdapter? = null
+    var reportBase: ReportBase? = null
+    var reportList: MutableList<Report>? = null
+    var reportAdapter: ReportAdapter? = null
 
 
     lateinit var mainViewModel: MainViewModel
@@ -34,10 +34,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    observer()
+        observer()
     }
 
-    private fun observer(){
+    private fun observer() {
 
         mainViewModel.progress.observe(this, Observer {
             pb_home.visibility = if (it) View.VISIBLE else View.GONE
@@ -54,14 +54,14 @@ class MainActivity : AppCompatActivity() {
         })
 
         mainViewModel.isError.observe(this, Observer {
-            showErrorSnack(this,it)
+            showErrorSnack(this, it)
         })
 
 
     }
 
 
-    private fun setRecyclerView(){
+    private fun setRecyclerView() {
         rc_report.layoutManager = LinearLayoutManager(this)
         reportAdapter = ReportAdapter(reportList!!)
         rc_report.adapter = reportAdapter
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
         reportAdapter!!.setListener(SimpleCallback<Report> {
             val bundle = Bundle()
             bundle.putSerializable("REPORT", it)
-            startActivity(ReportViewActivity::class.java,bundle)
+            startActivity(ReportViewActivity::class.java, bundle)
         })
 
     }
@@ -81,6 +81,7 @@ class MainActivity : AppCompatActivity() {
         }
         startActivity(intent)
     }
+
     private fun showErrorSnack(activity: Activity, message: String?) {
         try {
             Snackbar.make(
