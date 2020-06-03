@@ -23,7 +23,7 @@ class ReportViewActivity : AppCompatActivity() {
 
     fun productView(report: Report){
         txtTitleId.setText(report.title)
-        txtPriceId.setText(report.price.toString() + " Tk" )
+        txtPriceId.setText(report.price.toString() + " Tk " )
         Glide.with(this).load(BuildConfig.BASE_URL + report.image).into(img1)
 
 
