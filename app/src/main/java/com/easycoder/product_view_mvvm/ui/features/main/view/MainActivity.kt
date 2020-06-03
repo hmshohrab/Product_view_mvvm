@@ -9,7 +9,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.easycoder.product_view_mvvm.R
-import com.easycoder.product_view_mvvm.ReportViewActivity
 import com.easycoder.product_view_mvvm.core.interfaces.SimpleCallback
 import com.easycoder.product_view_mvvm.ui.features.main.model.Report
 import com.easycoder.product_view_mvvm.ui.features.main.model.ReportBase

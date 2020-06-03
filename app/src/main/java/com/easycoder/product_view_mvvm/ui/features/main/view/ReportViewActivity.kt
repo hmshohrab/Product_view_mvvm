@@ -1,9 +1,11 @@
-package com.easycoder.product_view_mvvm
+package com.easycoder.product_view_mvvm.ui.features.main.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import com.bumptech.glide.Glide
+import com.easycoder.product_view_mvvm.BuildConfig
+import com.easycoder.product_view_mvvm.R
 import com.easycoder.product_view_mvvm.ui.features.main.model.Report
 import kotlinx.android.synthetic.main.activity_report_view.*
 
