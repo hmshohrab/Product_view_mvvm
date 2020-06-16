@@ -1,6 +1,7 @@
 package com.easycoder.product_view_mvvm.ui.features.main.model
 
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 
 /**
@@ -11,9 +12,10 @@ import com.google.gson.annotations.SerializedName
  * Let's start coding :)
  * Bismillah Hir Rahman Nir Raheem
  */
+
 data class ReportBase(
 
     @SerializedName("error") val error: Int,
     @SerializedName("error_report") val error_report: String,
-    @SerializedName("report") val report: MutableList<Report>
-)
+    @SerializedName("report") val report : MutableList<Report>
+):Serializable

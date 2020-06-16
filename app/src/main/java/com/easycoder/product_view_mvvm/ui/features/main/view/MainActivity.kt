@@ -57,7 +57,6 @@ class MainActivity : AppCompatActivity() {
             showErrorSnack(this, it)
         })
 
-
     }
 
 

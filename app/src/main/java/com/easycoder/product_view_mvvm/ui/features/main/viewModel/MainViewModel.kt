@@ -18,6 +18,7 @@ import com.easycoder.product_view_mvvm.ui.features.main.model.ReportBase
  * Let's start coding :)
  * Bismillah Hir Rahman Nir Raheem
  */
+
 class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     var progress: MutableLiveData<Boolean> = MutableLiveData()

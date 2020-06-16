@@ -29,7 +29,7 @@ class ReportAdapter(private val reportList: MutableList<Report>) :
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        var view =
+        val view =
             LayoutInflater.from(parent.context).inflate(R.layout.raw_view_items, parent, false)
         return ReportViewHolder(view)
     }
